@@ -23,7 +23,7 @@ const PostDetail = ({ post }) => {
         modifiedText = <code key={index} className="w-full bg-black text-white px-2 py-1 rounded-md">{text}</code>;
       }
       
-      if (obj.code-block) {
+      if (obj.CodeBlock){
         modifiedText = <code key={index} className="w-full bg-black-text-white px-2 py-1 rounded-md">{text}</code>;
       }
     }
