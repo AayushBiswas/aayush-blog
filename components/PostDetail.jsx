@@ -20,6 +20,10 @@ const PostDetail = ({ post }) => {
       }
     }
 
+    if (obj.code) {
+        modifiedText = <code key={index}>{text}</code>;
+      }
+    }
     switch (type) {
       case "heading-three":
         return (
