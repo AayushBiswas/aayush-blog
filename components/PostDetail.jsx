@@ -21,12 +21,16 @@ const PostDetail = ({ post }) => {
 
       if (obj.code) {
         modifiedText = (
-          <code
-            key={index}
-            className="w-full bg-gray-900 text-white px-2 py-1 rounded-md"
-          >
-            {text}
-          </code>
+          <div className="mb-8 w-full bg-gray-900 text-white px-2 py-1 rounded-md overflow-hidden overflow-y-hidden overflow-x-auto">
+            <pre>
+              <code
+                key={index}
+                className="w-full bg-gray-900 text-white px-2 py-1 rounded-md"
+              >
+                {text}
+              </code>
+            </pre>
+          </div>
         );
       }
     }
