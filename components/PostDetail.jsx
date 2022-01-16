@@ -18,9 +18,8 @@ const PostDetail = ({ post }) => {
       if (obj.underline) {
         modifiedText = <u key={index}>{text}</u>;
       }
-    }
 
-    if (obj.code) {
+      if (obj.code) {
         modifiedText = <code key={index}><pre>{text}</pre></code>;
       }
     }
