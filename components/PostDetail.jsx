@@ -21,7 +21,7 @@ const PostDetail = ({ post }) => {
     }
 
     if (obj.code) {
-        modifiedText = <code key={index}>{text}</code>;
+        modifiedText = <code key={index}><pre>{text}</pre></code>;
       }
     }
     switch (type) {
