@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { PostCard, Categories, PostWidget } from "../components";
+import { PostCard, Categories, PostWidget, AdsByGoogle } from "../components";
 import { FeaturedPosts } from "../sections";
 import { getPosts } from "../services";
 
@@ -21,6 +21,7 @@ export default function Home({ posts }) {
           <div className="lg:sticky relative top-8">
             <PostWidget />
             <Categories />
+            <AdsByGoogle />
           </div>
         </div>
       </div>
