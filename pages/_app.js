@@ -20,6 +20,7 @@ function MyApp({ Component, pageProps }) {
   gtag('config', 'G-Z9SZ2SQ11X');
   `}
       </Script>
+      <Script strategy="lazyOnload" src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9615238518887122`}></Script>
       <Layout>
         <Component {...pageProps} />
       </Layout>
